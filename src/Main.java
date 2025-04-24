@@ -10,7 +10,6 @@ public class Main {
                 book1.getAuthor().getFirstName() + " " +
                 book1.getAuthor().getLastName() + ", год: " +
                 book1.getPublicationYear());
-
         System.out.println(book2.getTitle() + ", автор: " +
                 book2.getAuthor().getFirstName() + " " +
                 book2.getAuthor().getLastName() + ", год: " +
@@ -23,5 +22,12 @@ public class Main {
                 book2.getAuthor().getFirstName() + " " +
                 book2.getAuthor().getLastName() + ", год: " +
                 book2.getPublicationYear());
+
+        System.out.println("\nПроверка равенства книг:");
+        System.out.println("book1.equals(book2): " + book1.equals(book2));
+
+        System.out.println("\nПроверка хэш-кодов:");
+        System.out.println("book1.hashCode(): " + book1.hashCode());
+        System.out.println("book2.hashCode(): " + book2.hashCode());
     }
 }
